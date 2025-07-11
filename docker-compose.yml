@@ -1,0 +1,23 @@
+services:
+  backend:
+    build:
+      context: ./backend/
+    env_file:
+      - ./backend/.env
+    ports:
+      - "5000:5000"
+
+  frontend:
+    build:
+      context: ./frontend/
+    environment:
+      API_URL: 
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
