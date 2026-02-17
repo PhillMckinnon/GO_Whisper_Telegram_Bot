@@ -9,8 +9,6 @@ This project is a Dockerized Telegram bot written in Go, designed to handle spee
 
 ---
 
-## 🔁 Code Reuse Acknowledgement
-
 The Python backend in this repo reuses and adapts functionality from:
 
 - [Flutter_Python_Speech_App](https://github.com/PhillMckinnon/Flutter_Python_Speech_App)
@@ -19,8 +17,6 @@ The Python backend in this repo reuses and adapts functionality from:
 These repositories provided the foundation.
 
 ---
-
-## 🧠 Features
 
 - Telegram bot built with Go (`go-telegram-bot-api`)
 - Two main actions triggered via buttons:
@@ -34,9 +30,9 @@ These repositories provided the foundation.
 
 ---
 
-## ⚙️ Environment Setup
+## Environment Setup
 
-### 📁 `frontend/bot/.env`
+### `frontend/bot/.env`
 
 Set your Telegram bot token:
 
@@ -46,7 +42,7 @@ TELEGRAM_BOT_TOKEN=your_token_here
 
 ---
 
-### 📁 `backend/.env`
+### `backend/.env`
 
 Configure backend settings:
 
@@ -59,7 +55,7 @@ CORS_ORIGIN=http://localhost:8080
 
 ---
 
-## 🚀 Running the Bot
+## Running the Bot
 
 ### Prerequisites
 
